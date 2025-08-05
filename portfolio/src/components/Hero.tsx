@@ -9,7 +9,7 @@ const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const words = ['Full Stack Developer', 'UI/UX Designer', 'Problem Solver', 'Creative Thinker'];
+  const words = ['Software Engineer', 'Python Developer', 'Data Analyst', 'Problem Solver'];
 
   useEffect(() => {
     const handleType = () => {
@@ -58,7 +58,7 @@ const Hero = () => {
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
               <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center text-4xl font-bold text-gray-600">
-                YN
+                RA
               </div>
             </div>
           </div>
@@ -66,12 +66,12 @@ const Hero = () => {
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-poppins mb-6">
             <span className="block text-gray-800">Hi, I'm</span>
-            <span className="gradient-text">Your Name</span>
+            <span className="gradient-text">Rakshith A H</span>
           </h1>
 
           {/* Animated Subtitle */}
           <div className="text-xl md:text-2xl lg:text-3xl text-gray-600 mb-8 h-12 flex items-center justify-center">
-            <span>I'm a </span>
+            <span>Aspiring </span>
             <span className="gradient-text font-semibold ml-2 min-w-[300px] text-left">
               {text}
               <span className="animate-pulse">|</span>
@@ -80,8 +80,8 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-            I create amazing digital experiences with modern technologies. 
-            Passionate about building user-friendly applications that solve real-world problems.
+            Experienced in developing scalable solutions and process automation. 
+            Skilled in Python, C++, and cloud technologies, eager to contribute to innovative projects in a collaborative environment.
           </p>
 
           {/* CTA Buttons */}
@@ -93,10 +93,13 @@ const Hero = () => {
               <Mail className="w-5 h-5" />
               Get In Touch
             </button>
-            <button className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full font-semibold hover:bg-gray-50 hover:border-gray-400 transition-all duration-300 flex items-center gap-2">
+            <a
+              href="mailto:ahrakshith122@gmail.com"
+              className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full font-semibold hover:bg-gray-50 hover:border-gray-400 transition-all duration-300 flex items-center gap-2"
+            >
               <Download className="w-5 h-5" />
               Download CV
-            </button>
+            </a>
           </div>
 
           {/* Scroll Indicator */}

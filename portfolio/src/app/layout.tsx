@@ -10,13 +10,13 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name - Portfolio",
-  description: "Full Stack Developer & Designer creating amazing digital experiences",
-  keywords: ["developer", "portfolio", "web development", "full stack", "react", "next.js"],
-  authors: [{ name: "Your Name" }],
+  title: "Rakshith A H - Portfolio",
+  description: "Aspiring Software Engineer | Python Developer | Data Analyst - Creating innovative solutions with modern technologies",
+  keywords: ["software engineer", "python developer", "data analyst", "web development", "machine learning", "portfolio", "rakshith"],
+  authors: [{ name: "Rakshith A H" }],
   openGraph: {
-    title: "Your Name - Portfolio",
-    description: "Full Stack Developer & Designer creating amazing digital experiences",
+    title: "Rakshith A H - Portfolio",
+    description: "Aspiring Software Engineer | Python Developer | Data Analyst - Creating innovative solutions with modern technologies",
     type: "website",
   },
 };

@@ -1,11 +1,11 @@
-import { User, Award, Coffee, Heart } from 'lucide-react';
+import { User, Award, Coffee, Heart, GraduationCap, MapPin } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { icon: Award, label: 'Years Experience', value: '3+' },
-    { icon: Coffee, label: 'Projects Completed', value: '50+' },
-    { icon: Heart, label: 'Happy Clients', value: '30+' },
-    { icon: User, label: 'Team Projects', value: '15+' },
+    { icon: GraduationCap, label: 'CGPA', value: '8.26' },
+    { icon: Coffee, label: 'Projects Completed', value: '10+' },
+    { icon: Award, label: 'Internship', value: 'LG Soft' },
+    { icon: User, label: 'Languages Known', value: '3' },
   ];
 
   return (
@@ -16,7 +16,7 @@ const About = () => {
             <span className="gradient-text">About Me</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Get to know more about who I am, what I do, and what skills I have
+            Get to know more about who I am, my education, and what drives me as a developer
           </p>
         </div>
 
@@ -25,10 +25,10 @@ const About = () => {
           <div className="space-y-8">
             <div className="relative">
               <div className="w-full max-w-md mx-auto aspect-square rounded-2xl bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center text-6xl font-bold text-gray-400">
-                Your Photo
+                Rakshith A H
               </div>
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                3+ Years
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm text-center">
+                Research<br/>Engineer
               </div>
             </div>
 
@@ -51,31 +51,46 @@ const About = () => {
           <div className="space-y-6">
             <div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                I'm a passionate developer who loves creating digital solutions
+                Aspiring Software Engineer with a passion for innovation
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                With over 3 years of experience in web development, I specialize in creating 
-                modern, responsive, and user-friendly applications. My journey started with a 
-                curiosity about how websites work, and it has evolved into a passion for 
-                crafting exceptional digital experiences.
+                I'm currently pursuing my Bachelor of Engineering in Information Science at JSS Science and Technology University (Formerly SJCE), Mysore, with a CGPA of 8.26. My journey in technology started with curiosity and has evolved into a passion for developing scalable solutions and process automation.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                I believe in writing clean, maintainable code and staying up-to-date with the 
-                latest technologies and best practices. When I'm not coding, you can find me 
-                exploring new frameworks, contributing to open-source projects, or sharing 
-                knowledge with the developer community.
+                Currently working as a Research Engineer Intern at LG Soft India, where I've automated audio playback analysis using Python scripts and enhanced workflows for Amazon Alexa. I've reduced QA time and improved test coverage by 30% through innovative automation solutions.
               </p>
+            </div>
+
+            {/* Education Section */}
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl">
+              <h4 className="text-lg font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <GraduationCap className="w-5 h-5 text-blue-600" />
+                Education
+              </h4>
+              <div className="space-y-3">
+                <div>
+                  <div className="font-semibold text-gray-800">Bachelor of Engineering - Information Science</div>
+                  <div className="text-sm text-gray-600">JSS Science and Technology University, Mysore</div>
+                  <div className="text-sm text-blue-600">2021-2025 • CGPA: 8.26</div>
+                </div>
+                <div>
+                  <div className="font-semibold text-gray-800">State Board - PCMB</div>
+                  <div className="text-sm text-gray-600">Vivekananda PU College, Nehru Nagar Putttur</div>
+                  <div className="text-sm text-blue-600">2019-2021 • 90%</div>
+                </div>
+              </div>
             </div>
 
             <div className="space-y-4">
               <h4 className="text-lg font-semibold text-gray-800">What I bring to the table:</h4>
               <ul className="space-y-3">
                 {[
-                  'Strong problem-solving skills and attention to detail',
-                  'Experience with modern web technologies and frameworks',
-                  'Collaborative mindset and excellent communication skills',
-                  'Passion for continuous learning and improvement',
-                  'User-centered approach to development',
+                  'Strong foundation in Python, C++, and JavaScript programming',
+                  'Experience with cloud technologies (AWS, Firebase, GCP)',
+                  'Proven ability to automate processes and improve efficiency',
+                  'Collaborative mindset with agile development experience',
+                  'Multilingual communication (English, Kannada, Tulu)',
+                  'Passion for AI/ML, NLP, and data analysis',
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
@@ -87,7 +102,7 @@ const About = () => {
 
             <div className="pt-6">
               <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                Let's Work Together
+                Let's Collaborate
               </button>
             </div>
           </div>

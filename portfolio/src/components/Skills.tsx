@@ -1,36 +1,33 @@
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Frontend',
+      title: 'Languages',
       skills: [
-        { name: 'React', level: 90, color: 'from-blue-500 to-cyan-500' },
-        { name: 'Next.js', level: 85, color: 'from-gray-700 to-gray-900' },
-        { name: 'TypeScript', level: 80, color: 'from-blue-600 to-blue-800' },
-        { name: 'Tailwind CSS', level: 95, color: 'from-teal-500 to-cyan-600' },
-        { name: 'JavaScript', level: 90, color: 'from-yellow-400 to-yellow-600' },
-        { name: 'HTML/CSS', level: 95, color: 'from-orange-500 to-red-500' },
+        { name: 'Python', level: 95, color: 'from-blue-500 to-yellow-500' },
+        { name: 'C++', level: 85, color: 'from-blue-600 to-blue-800' },
+        { name: 'JavaScript', level: 80, color: 'from-yellow-400 to-yellow-600' },
+        { name: 'SQL', level: 85, color: 'from-blue-600 to-blue-800' },
+        { name: 'HTML/CSS', level: 90, color: 'from-orange-500 to-red-500' },
       ],
     },
     {
-      title: 'Backend',
+      title: 'Web & API Development',
       skills: [
-        { name: 'Node.js', level: 85, color: 'from-green-500 to-green-700' },
-        { name: 'Express.js', level: 80, color: 'from-gray-600 to-gray-800' },
-        { name: 'Python', level: 75, color: 'from-blue-500 to-yellow-500' },
-        { name: 'MongoDB', level: 80, color: 'from-green-600 to-green-800' },
-        { name: 'PostgreSQL', level: 70, color: 'from-blue-600 to-blue-800' },
-        { name: 'REST APIs', level: 90, color: 'from-purple-500 to-purple-700' },
+        { name: 'Flask', level: 90, color: 'from-gray-600 to-gray-800' },
+        { name: 'FastAPI', level: 75, color: 'from-green-500 to-green-700' },
+        { name: 'REST APIs', level: 85, color: 'from-purple-500 to-purple-700' },
+        { name: 'Streamlit', level: 90, color: 'from-red-500 to-red-700' },
+        { name: 'React', level: 70, color: 'from-blue-500 to-cyan-500' },
       ],
     },
     {
-      title: 'Tools & Others',
+      title: 'Cloud & Databases',
       skills: [
-        { name: 'Git', level: 90, color: 'from-orange-500 to-red-600' },
-        { name: 'Docker', level: 70, color: 'from-blue-500 to-blue-700' },
-        { name: 'AWS', level: 65, color: 'from-orange-400 to-orange-600' },
-        { name: 'Figma', level: 80, color: 'from-purple-500 to-pink-500' },
-        { name: 'Jest', level: 75, color: 'from-red-500 to-red-700' },
-        { name: 'GraphQL', level: 60, color: 'from-pink-500 to-purple-600' },
+        { name: 'AWS', level: 80, color: 'from-orange-400 to-orange-600' },
+        { name: 'Firebase', level: 85, color: 'from-yellow-500 to-orange-500' },
+        { name: 'Google Cloud', level: 80, color: 'from-blue-500 to-green-500' },
+        { name: 'MySQL', level: 85, color: 'from-blue-600 to-blue-800' },
+        { name: 'SQL Server', level: 75, color: 'from-red-600 to-red-800' },
       ],
     },
   ];
@@ -47,7 +44,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {skillCategories.map((category, categoryIndex) => (
             <div
               key={categoryIndex}
@@ -76,13 +73,48 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Additional Skills Pills */}
-        <div className="mt-16 text-center">
-          <h3 className="text-xl font-semibold text-gray-800 mb-8">Also familiar with</h3>
+        {/* AI & Data Science Skills */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center">AI & Data Science</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              'Redux', 'Vue.js', 'Angular', 'Firebase', 'Vercel', 'Netlify',
-              'Stripe', 'Socket.io', 'Prisma', 'Sass', 'Webpack', 'Vite',
+              'Machine Learning', 'NLP', 'Scikit-learn', 'Pandas', 'SpaCy', 
+              'Data Preprocessing', 'Model Evaluation', 'Multinomial Naive Bayes'
+            ].map((tech, index) => (
+              <span
+                key={index}
+                className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 cursor-default"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Voice & Audio Processing */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center">Voice & Audio Processing</h3>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              'Google Speech-to-Text API', 'gTTS', 'PyQt5', 'pydub', 'Audio Analysis'
+            ].map((tech, index) => (
+              <span
+                key={index}
+                className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-4 py-2 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 cursor-default"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Other Tools & Technologies */}
+        <div className="text-center">
+          <h3 className="text-xl font-semibold text-gray-800 mb-8">Tools & Other Technologies</h3>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              'Git', 'VS Code', 'Data Structures', 'Algorithms', 'OOP', 
+              'Computer Networks', 'OS Concepts', 'TCPDF', 'Bootstrap'
             ].map((tech, index) => (
               <span
                 key={index}
@@ -91,6 +123,15 @@ const Skills = () => {
                 {tech}
               </span>
             ))}
+          </div>
+        </div>
+
+        {/* Certifications */}
+        <div className="mt-16 text-center">
+          <h3 className="text-2xl font-bold text-gray-800 mb-8">Certifications</h3>
+          <div className="bg-white rounded-2xl p-8 shadow-lg max-w-md mx-auto">
+            <div className="text-lg font-semibold text-gray-800 mb-2">REST APIs with Flask and Python</div>
+            <div className="text-sm text-gray-600">Professional Certification</div>
           </div>
         </div>
       </div>

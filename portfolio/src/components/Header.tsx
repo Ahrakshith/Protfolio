@@ -45,7 +45,7 @@ const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="text-2xl font-bold font-poppins">
-            <span className="gradient-text">Your Name</span>
+            <span className="gradient-text">Rakshith A H</span>
           </div>
 
           {/* Desktop Navigation */}
